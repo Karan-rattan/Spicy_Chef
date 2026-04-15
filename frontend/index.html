@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Spicy Chef 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-brand" href="#" onclick="showPage('home')">
+    <div class="nav-logo">🌶️</div>
+    <span class="nav-name">Spicy Chef 2</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active" id="nav-home" onclick="showPage('home');return false;">Home Page</a></li>
+    <li><a href="#" id="nav-menu" onclick="showPage('menu');return false;">Menu Page</a></li>
+    <li><a href="#" id="nav-about" onclick="showPage('about');return false;">About Page</a></li>
+    <li><a href="#" id="nav-order" onclick="showPage('order');return false;">Order Online Page</a></li>
+    <li><a href="#" id="nav-contact" onclick="showPage('contact');return false;">Contact Page</a></li>
+  </ul>
+  <a href="#" class="nav-cta" onclick="showPage('order');return false;">Order Online</a>
+</nav>
+
+<!-- ══════════════ HOME PAGE ══════════════ -->
+<div class="page active" id="page-home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-badge fade-up">Authentic Since 2010</div>
+      <h1 class="fade-up-2">Experience the <em>Heat</em> of Authentic Cuisine</h1>
+      <p class="hero-desc fade-up-3">Bold spices, traditional recipes, and flavors passed down through generations — all brought to your table with love and craftsmanship.</p>
+      <div class="hero-actions fade-up-4">
+        <a href="#" class="btn-primary" onclick="showPage('order');return false;">Order Now →</a>
+        <a href="#" class="btn-outline" onclick="showPage('menu');return false;">View Menu</a>
+      </div>
+      <div class="hero-stats fade-up-4" style="margin-top:40px;">
+        <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Years of flavour</div></div>
+        <div class="stat"><div class="stat-num">50+</div><div class="stat-label">Signature dishes</div></div>
+        <div class="stat"><div class="stat-num">10k+</div><div class="stat-label">Happy customers</div></div>
+      </div>
+    </div>
+    <div class="hero-img fade-up-2">
+      <div class="hero-img-box">🍛<div class="hero-img-overlay"></div></div>
+    </div>
+  </section>
+
+  <!-- Featured Dishes -->
+  <section style="background:var(--white);">
+    <div style="padding:80px 5%;">
+      <div class="section-header">
+        <div class="section-header-left">
+          <div class="section-tag">Chef's Selection</div>
+          <h2 class="section-title">Featured Dishes</h2>
+          <p class="section-sub">Handpicked favourites crafted with bold spices and traditional techniques.</p>
+        </div>
+        <a href="#" class="btn-outline" onclick="showPage('menu');return false;">View Full Menu →</a>
+      </div>
+      <div class="dishes-grid">
+        <div class="dish-card"><div class="dish-img">🍛<div class="dish-img-overlay"></div></div><div class="dish-body"><div class="dish-top"><span class="dish-name">Spicy Curry Bowl</span><span class="dish-price">$14.99</span></div><p class="dish-desc">Traditional curry with aromatic spices, vegetables, and your choice of protein</p><div class="dish-footer"><div class="dish-heat"><span>🌶️</span><span>🌶️</span><span>🌶️</span></div><button class="dish-add">+</button></div></div></div>
+        <div class="dish-card"><div class="dish-img">🍗<div class="dish-img-overlay"></div></div><div class="dish-body"><div class="dish-top"><span class="dish-name">Butter Chicken</span><span class="dish-price">$14.99</span></div><p class="dish-desc">Tender chicken in a rich, creamy tomato sauce with aromatic spices</p><div class="dish-footer"><div class="dish-heat"><span>🌶️</span><span>🌶️</span></div><button class="dish-add">+</button></div></div></div>
+        <div class="dish-card"><div class="dish-img">🍖<div class="dish-img-overlay"></div></div><div class="dish-body"><div class="dish-top"><span class="dish-name">Lamb Rogan Josh</span><span class="dish-price">$16.99</span></div><p class="dish-desc">Aromatic lamb curry with traditional Kashmiri spices and slow-cooked perfection</p><div class="dish-footer"><div class="dish-heat"><span>🌶️</span><span>🌶️</span><span>🌶️</span></div><button class="dish-add">+</button></div></div></div>
+        <div class="dish-card"><div class="dish-img">🍚<div class="dish-img-overlay"></div></div><div class="dish-body"><div class="dish-top"><span class="dish-name">Chicken Biryani</span><span class="dish-price">$13.99</span></div><p class="dish-desc">Fragrant basmati rice layered with spiced chicken and caramelised onions</p><div class="dish-footer"><div class="dish-heat"><span>🌶️</span><span>🌶️</span></div><button class="dish-add">+</button></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section>
+    <div class="section-header" style="flex-direction:column;align-items:center;text-align:center;gap:8px;">
+      <div class="section-tag">Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub" style="margin:0 auto;">Don't just take our word for it — hear from our satisfied customers</p>
+    </div>
+    <div class="testimonials-grid" style="margin-top:48px;">
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="t-text">"The curry bowl is absolutely incredible. Rich, flavourful and perfectly spiced — I order it every week without fail. Best Indian food in the city!"</p><div class="t-author"><div class="t-avatar">👩</div><div><div class="t-name">Sarah M.</div><div class="t-role">Regular Customer</div></div></div></div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="t-text">"As someone who travels for food, Spicy Chef 2 stands out. The biryani is as authentic as anything I've had in India. Genuinely exceptional."</p><div class="t-author"><div class="t-avatar">👨</div><div><div class="t-name">James K.</div><div class="t-role">Food Enthusiast</div></div></div></div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="t-text">"Quick delivery, generous portions and flavours that are just out of this world. The lamb rogan josh is a masterpiece. Highly recommend!"</p><div class="t-author"><div class="t-avatar">👩‍🦱</div><div><div class="t-name">Priya R.</div><div class="t-role">Local Foodie</div></div></div></div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <h2>Ready to Experience the Flavour?</h2>
+    <p>Order online for delivery or pickup — fresh, hot, and delivered to your door</p>
+    <div class="cta-actions">
+      <a href="#" class="btn-white" onclick="showPage('order');return false;">🛒 Order Online</a>
+      <a href="#" class="btn-outline-white" onclick="showPage('menu');return false;">View Menu</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-box">🌶️</div><span class="footer-logo-name">Spicy Chef 2</span></div><p class="footer-tagline">Bringing authentic flavors and traditional recipes to your table since 2010.</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul class="footer-links"><li><a href="#" onclick="showPage('home');return false;">Home Page</a></li><li><a href="#" onclick="showPage('menu');return false;">Menu Page</a></li><li><a href="#" onclick="showPage('about');return false;">About Page</a></li><li><a href="#" onclick="showPage('order');return false;">Order Online</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item">📍 3725 RundleHorn Dr NE</div><div class="footer-contact-item">📞 +1 (403) 555-0192</div><div class="footer-contact-item">✉️ hello@spicychef2.com</div></div>
+      <div class="footer-col"><h5>Follow Us</h5><div class="social-row"><a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📷</a><a class="social-btn" href="#">🐦</a><a class="social-btn" href="#">▶️</a></div></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2025 Spicy Chef 2. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </footer>
+</div>
+
+<!-- ══════════════ MENU PAGE ══════════════ -->
+<div class="page" id="page-menu">
+  <div class="menu-hero">
+    <h1>Our Menu</h1>
+    <p>Explore our selection of authentic dishes crafted with traditional recipes and bold flavors</p>
+  </div>
+  <div class="menu-banner">
+    <div class="menu-banner-text">🍽️ Ready to order? Get your favourites delivered fresh</div>
+    <a href="#" class="nav-cta" onclick="showPage('order');return false;">Order Online Now →</a>
+  </div>
+  <div class="menu-layout">
+    <aside class="menu-sidebar">
+      <div class="sidebar-search">
+        <label>Search Menu</label>
+        <div class="search-input-wrap"><input type="text" placeholder="Search dishes..." id="menuSearch" oninput="filterMenu()"/></div>
+      </div>
+      <div class="cat-box">
+        <h4>Categories</h4>
+        <button class="cat-btn active" onclick="scrollToSection('appetizers')">Appetizers <span>8</span></button>
+        <button class="cat-btn" onclick="scrollToSection('mains')">Mains <span>12</span></button>
+        <button class="cat-btn" onclick="scrollToSection('sides')">Sides <span>3</span></button>
+        <button class="cat-btn" onclick="scrollToSection('desserts')">Desserts <span>5</span></button>
+        <button class="cat-btn" onclick="scrollToSection('drinks')">Drinks <span>3</span></button>
+      </div>
+    </aside>
+    <div class="menu-content">
+      <!-- Appetizers -->
+      <div class="menu-section" id="appetizers">
+        <div class="menu-section-header"><span class="menu-section-title">Appetizers</span><span class="menu-count">8 items</span></div>
+        <div class="menu-grid">
+        </div>
+      </div>
+      <!-- Mains -->
+      <div class="menu-section" id="mains">
+        <div class="menu-section-header"><span class="menu-section-title">Mains</span><span class="menu-count">12 items</span></div>
+        <div class="menu-grid">
+        </div>
+      </div>
+      <!-- Sides -->
+      <div class="menu-section" id="sides">
+        <div class="menu-section-header"><span class="menu-section-title">Sides</span><span class="menu-count">3 items</span></div>
+        <div class="menu-grid">
+        </div>
+      </div>
+      <!-- Desserts -->
+      <div class="menu-section" id="desserts">
+        <div class="menu-section-header"><span class="menu-section-title">Desserts</span><span class="menu-count">5 items</span></div>
+        <div class="menu-grid">
+        </div>
+      </div>
+      <!-- Drinks -->
+      <div class="menu-section" id="drinks">
+        <div class="menu-section-header"><span class="menu-section-title">Drinks</span><span class="menu-count">3 items</span></div>
+        <div class="menu-grid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-box">🌶️</div><span class="footer-logo-name">Spicy Chef 2</span></div><p class="footer-tagline">Bringing authentic flavors and traditional recipes to your table since 2010.</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul class="footer-links"><li><a href="#" onclick="showPage('home');return false;">Home Page</a></li><li><a href="#" onclick="showPage('menu');return false;">Menu Page</a></li><li><a href="#" onclick="showPage('about');return false;">About Page</a></li><li><a href="#" onclick="showPage('order');return false;">Order Online</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item">📍 3725 RundleHorn Dr NE</div><div class="footer-contact-item">📞 +1 (403) 555-0192</div><div class="footer-contact-item">✉️ hello@spicychef2.com</div></div>
+      <div class="footer-col"><h5>Follow Us</h5><div class="social-row"><a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📷</a><a class="social-btn" href="#">🐦</a><a class="social-btn" href="#">▶️</a></div></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2025 Spicy Chef 2. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </footer>
+</div>
+
+<!-- ══════════════ ORDER PAGE ══════════════ -->
+<div class="page" id="page-order">
+  <div class="menu-hero">
+    <h1>Order Online</h1>
+    <p>Fresh, delicious food delivered to your door or ready for pickup</p>
+  </div>
+  <div class="order-top">
+    <div class="toggle-group">
+      <button class="toggle-btn active" onclick="setDelivery(this,'pickup')">🛍️ Pickup</button>
+      <button class="toggle-btn" onclick="setDelivery(this,'delivery')">🚚 Delivery</button>
+    </div>
+    <div class="address-row">
+      <input class="address-input" type="text" placeholder="📍 Enter your address"/>
+      <button class="find-btn">Find Location</button>
+    </div>
+  </div>
+  <div class="order-cats">
+    <button class="order-cat-btn active">All Items</button>
+    <button class="order-cat-btn">Appetizers</button>
+    <button class="order-cat-btn">Main Course</button>
+    <button class="order-cat-btn">Tandoori</button>
+    <button class="order-cat-btn">Biryani</button>
+    <button class="order-cat-btn">Desserts</button>
+    <button class="order-cat-btn">Beverages</button>
+  </div>
+  <div class="order-layout">
+    <div class="order-items">
+      <div class="order-section-title">Appetizers</div>
+      <div class="order-item"><div class="order-item-img">🥟</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Samosa (2 pcs)</span><span class="order-item-price">$5.99</span></div><p class="order-item-desc">Crispy pastry filled with spiced potatoes and peas</p><button class="order-add-btn" onclick="addToCart('Samosa (2 pcs)',5.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🧀</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Paneer Tikka</span><span class="order-item-price">$8.99</span></div><p class="order-item-desc">Marinated cottage cheese grilled to perfection</p><button class="order-add-btn" onclick="addToCart('Paneer Tikka',8.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🍗</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Chicken Wings</span><span class="order-item-price">$9.99</span></div><p class="order-item-desc">Spicy chicken wings with special sauce</p><button class="order-add-btn" onclick="addToCart('Chicken Wings',9.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🥢</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Spring Rolls (4 pcs)</span><span class="order-item-price">$6.99</span></div><p class="order-item-desc">Crispy vegetable spring rolls with sweet chili sauce</p><button class="order-add-btn" onclick="addToCart('Spring Rolls (4 pcs)',6.99)">+ Add to Cart</button></div></div>
+      <div class="order-section-title">Main Course</div>
+      <div class="order-item"><div class="order-item-img">🍗</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Butter Chicken <span class="popular-badge">Popular</span></span><span class="order-item-price">$14.99</span></div><p class="order-item-desc">Tender chicken in rich tomato cream sauce</p><button class="order-add-btn" onclick="addToCart('Butter Chicken',14.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🥬</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Palak Paneer</span><span class="order-item-price">$12.99</span></div><p class="order-item-desc">Cottage cheese in creamy spinach gravy</p><button class="order-add-btn" onclick="addToCart('Palak Paneer',12.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🍖</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Lamb Rogan Josh</span><span class="order-item-price">$16.99</span></div><p class="order-item-desc">Aromatic lamb curry with traditional spices</p><button class="order-add-btn" onclick="addToCart('Lamb Rogan Josh',16.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🍛</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Chicken Tikka Masala <span class="popular-badge">Popular</span></span><span class="order-item-price">$15.99</span></div><p class="order-item-desc">Grilled chicken in spiced tomato cream sauce</p><button class="order-add-btn" onclick="addToCart('Chicken Tikka Masala',15.99)">+ Add to Cart</button></div></div>
+      <div class="order-section-title">Biryani Specials</div>
+      <div class="order-item"><div class="order-item-img">🍚</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Chicken Biryani</span><span class="order-item-price">$13.99</span></div><p class="order-item-desc">Fragrant basmati rice with spiced chicken</p><button class="order-add-btn" onclick="addToCart('Chicken Biryani',13.99)">+ Add to Cart</button></div></div>
+      <div class="order-item"><div class="order-item-img">🥦</div><div class="order-item-body"><div class="order-item-top"><span class="order-item-name">Vegetable Biryani</span><span class="order-item-price">$11.99</span></div><p class="order-item-desc">Mixed vegetables with aromatic rice</p><button class="order-add-btn" onclick="addToCart('Vegetable Biryani',11.99)">+ Add to Cart</button></div></div>
+    </div>
+    <!-- Cart -->
+    <div class="cart-sidebar">
+      <div class="cart-title">Your Cart</div>
+      <div class="cart-count" id="cartCountLabel">0 items</div>
+      <div id="cartItems"><p style="font-size:0.85rem;color:var(--mid);text-align:center;padding:20px 0;">Your cart is empty.<br>Add some dishes! 🍽️</p></div>
+      <div class="promo-row"><input class="promo-input" type="text" placeholder="Promo code"/><button class="apply-btn">Apply</button></div>
+      <div class="cart-totals">
+        <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+        <div class="cart-row"><span>Delivery Fee</span><span>$3.99</span></div>
+        <div class="cart-row"><span>Tax (8.5%)</span><span id="cartTax">$0.00</span></div>
+        <div class="cart-total-row"><span>Total</span><span id="cartTotal">$0.00</span></div>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout →</button>
+    </div>
+  </div>
+  <div class="trust-strip">
+    <div class="trust-item"><div class="trust-icon">⏱️</div><div class="trust-title">Quick Delivery</div><div class="trust-desc">Average delivery time: 30–45 minutes</div></div>
+    <div class="trust-item"><div class="trust-icon">🔒</div><div class="trust-title">Safe & Secure</div><div class="trust-desc">Contactless delivery and secure payments</div></div>
+    <div class="trust-item"><div class="trust-icon">💬</div><div class="trust-title">24/7 Support</div><div class="trust-desc">We're here to help with any questions</div></div>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-box">🌶️</div><span class="footer-logo-name">Spicy Chef 2</span></div><p class="footer-tagline">Bringing authentic flavors and traditional recipes to your table since 2010.</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul class="footer-links"><li><a href="#" onclick="showPage('home');return false;">Home Page</a></li><li><a href="#" onclick="showPage('menu');return false;">Menu Page</a></li><li><a href="#" onclick="showPage('about');return false;">About Page</a></li><li><a href="#" onclick="showPage('order');return false;">Order Online</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item">📍 3725 RundleHorn Dr NE</div><div class="footer-contact-item">📞 +1 (403) 555-0192</div><div class="footer-contact-item">✉️ hello@spicychef2.com</div></div>
+      <div class="footer-col"><h5>Follow Us</h5><div class="social-row"><a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📷</a><a class="social-btn" href="#">🐦</a><a class="social-btn" href="#">▶️</a></div></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2025 Spicy Chef 2. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </footer>
+</div>
+
+<!-- ══════════════ ABOUT PAGE ══════════════ -->
+<div class="page" id="page-about">
+  <div class="menu-hero">
+    <h1>Our Story</h1>
+    <p>A journey of passion, tradition, and authentic flavors that started over a decade ago</p>
+  </div>
+  <div class="about-story">
+    <div class="about-story-left">
+      <div class="section-tag">Our Story</div>
+      <h2 class="section-title">A Legacy of Flavor & Tradition</h2>
+      <p style="color:var(--mid);line-height:1.8;margin-top:16px;">Founded in 2010, Spicy Chef 2 was born from a deep love of authentic cuisine and a desire to share traditional recipes with our community. What started as a small family kitchen has grown into a beloved restaurant serving thousands of happy customers.</p>
+      <p style="color:var(--mid);line-height:1.8;margin-top:12px;">Every dish is crafted with care, using spices sourced directly from traditional suppliers and recipes passed down through generations. We believe great food brings people together — and that every meal should be an unforgettable experience.</p>
+    </div>
+    <div class="about-story-img">🏛️</div>
+  </div>
+  <div class="values-section">
+    <div style="text-align:center;">
+      <div class="section-tag">What We Stand For</div>
+      <h2 class="section-title">Our Core Values</h2>
+      <p class="section-sub" style="margin:0 auto;">The principles that guide everything we do, from sourcing ingredients to serving our guests</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card"><div class="value-icon">❤️</div><div class="value-title">Authenticity</div><p class="value-desc">Every recipe honours the traditions it comes from, with no shortcuts or compromises.</p></div>
+      <div class="value-card"><div class="value-icon">⭐</div><div class="value-title">Quality</div><p class="value-desc">We source the finest ingredients and maintain rigorous standards in every kitchen.</p></div>
+      <div class="value-card"><div class="value-icon">👥</div><div class="value-title">Community</div><p class="value-desc">We're proud to serve our neighbours and give back to the community we call home.</p></div>
+      <div class="value-card"><div class="value-icon">🔥</div><div class="value-title">Passion</div><p class="value-desc">Our team brings genuine love and enthusiasm to every dish we prepare and serve.</p></div>
+    </div>
+  </div>
+  <div class="timeline-section">
+    <div style="text-align:center;">
+      <div class="section-tag">Milestones</div>
+      <h2 class="section-title">Our Journey</h2>
+      <p class="section-sub" style="margin:0 auto;">Key milestones that shaped Spicy Chef 2 into what it is today</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-year"><div class="timeline-year-badge">2010</div></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">The Beginning</div><p class="timeline-desc">Opened our first location with a small but passionate team and a menu of 15 authentic dishes.</p></div></div>
+      <div class="timeline-item"><div class="timeline-year"><div class="timeline-year-badge">2013</div></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">First Expansion</div><p class="timeline-desc">Grew to a larger premises to accommodate our ever-growing community of loyal customers.</p></div></div>
+      <div class="timeline-item"><div class="timeline-year"><div class="timeline-year-badge">2017</div></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">Award Recognition</div><p class="timeline-desc">Received Best Authentic Indian Restaurant award from the City Food Council for three consecutive years.</p></div></div>
+      <div class="timeline-item"><div class="timeline-year"><div class="timeline-year-badge">2020</div></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">Digital Innovation</div><p class="timeline-desc">Launched online ordering and delivery services, making our food accessible to everyone from home.</p></div></div>
+      <div class="timeline-item"><div class="timeline-year"><div class="timeline-year-badge">2026</div></div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-title">Present Day</div><p class="timeline-desc">Continuing to grow, innovate, and serve the community with the same passion as day one.</p></div></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-box">🌶️</div><span class="footer-logo-name">Spicy Chef 2</span></div><p class="footer-tagline">Bringing authentic flavors and traditional recipes to your table since 2010.</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul class="footer-links"><li><a href="#" onclick="showPage('home');return false;">Home Page</a></li><li><a href="#" onclick="showPage('menu');return false;">Menu Page</a></li><li><a href="#" onclick="showPage('about');return false;">About Page</a></li><li><a href="#" onclick="showPage('order');return false;">Order Online</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item">📍 3725 RundleHorn Dr NE</div><div class="footer-contact-item">📞 +1 (403) 555-0192</div><div class="footer-contact-item">✉️ hello@spicychef2.com</div></div>
+      <div class="footer-col"><h5>Follow Us</h5><div class="social-row"><a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📷</a><a class="social-btn" href="#">🐦</a><a class="social-btn" href="#">▶️</a></div></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2025 Spicy Chef 2. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </footer>
+</div>
+
+<!-- ══════════════ CONTACT PAGE ══════════════ -->
+<div class="page" id="page-contact">
+  <div class="map-hero">
+    <h1>Our Locations</h1>
+    <p>Find us and visit in person — we'd love to see you</p>
+  </div>
+  <div class="map-placeholder">🗺️</div>
+  <div class="locations-section">
+    <div class="locations-list">
+      <h3>All Locations</h3>
+      <p>Select a location to view details and get directions</p>
+      <div class="location-card">
+        <div class="location-name">📍 Main Restaurant</div>
+        <div class="location-detail"><span>📌</span> 3725 RundleHorn Drive NE</div>
+        <div class="location-detail"><span>📞</span> +1 (403) 555-0192</div>
+        <div class="location-detail"><span>🕐</span> Mon–Sun: 11:00 AM – 10:00 PM</div>
+        <div class="location-detail"><span>🅿️</span> Free parking available</div>
+        <div class="location-detail"><span>🚌</span> Accessible by public transit</div>
+        <button class="directions-btn">📍 Get Directions</button>
+      </div>
+    </div>
+    <div>
+      <div class="section-tag">Why Visit</div>
+      <h2 class="section-title" style="margin-bottom:24px;">What to Expect</h2>
+      <p style="color:var(--mid);font-size:0.9rem;line-height:1.7;margin-bottom:24px;">All our locations offer the same great experience — warm hospitality, authentic food, and a welcoming atmosphere you'll want to return to.</p>
+    </div>
+  </div>
+  <div class="expect-section">
+    <div class="section-tag">Services</div>
+    <h2 class="section-title">What We Offer</h2>
+    <div class="expect-grid">
+      <div class="expect-card"><div class="expect-icon">🍽️</div><div class="expect-title">Dine-In</div><p class="expect-desc">Comfortable seating and a welcoming atmosphere</p></div>
+      <div class="expect-card"><div class="expect-icon">🛍️</div><div class="expect-title">Takeout</div><p class="expect-desc">Quick pickup for orders on the go</p></div>
+      <div class="expect-card"><div class="expect-icon">🚚</div><div class="expect-title">Delivery</div><p class="expect-desc">Fast delivery straight to your doorstep</p></div>
+      <div class="expect-card"><div class="expect-icon">📶</div><div class="expect-title">Free WiFi</div><p class="expect-desc">Complimentary internet access for all guests</p></div>
+    </div>
+  </div>
+  <div class="cta-banner">
+    <h2>Ready to Visit?</h2>
+    <p>Choose your nearest location and place an order for pickup or delivery</p>
+    <div class="cta-actions">
+      <a href="#" class="btn-white" onclick="showPage('order');return false;">🛒 Order Online Now</a>
+      <a href="tel:+14035550192" class="btn-outline-white">📞 Call to Order</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-box">🌶️</div><span class="footer-logo-name">Spicy Chef 2</span></div><p class="footer-tagline">Bringing authentic flavors and traditional recipes to your table since 2010.</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul class="footer-links"><li><a href="#" onclick="showPage('home');return false;">Home Page</a></li><li><a href="#" onclick="showPage('menu');return false;">Menu Page</a></li><li><a href="#" onclick="showPage('about');return false;">About Page</a></li><li><a href="#" onclick="showPage('order');return false;">Order Online</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="footer-contact-item">📍 3725 RundleHorn Dr NE</div><div class="footer-contact-item">📞 +1 (403) 555-0192</div><div class="footer-contact-item">✉️ hello@spicychef2.com</div></div>
+      <div class="footer-col"><h5>Follow Us</h5><div class="social-row"><a class="social-btn" href="#">📘</a><a class="social-btn" href="#">📷</a><a class="social-btn" href="#">🐦</a><a class="social-btn" href="#">▶️</a></div></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">© 2025 Spicy Chef 2. All rights reserved.</span><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a></div></div>
+  </footer>
+</div>
+
+<script src="./js/api.js"></script>   
+<script src="./js/cart.js"></script>  
+<script src="./js/app.js"></script>   
+</body>
+</html>
